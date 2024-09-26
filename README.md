@@ -19,10 +19,11 @@ Created by
 With contributions from: 
 - Dom David,
 - [Dan Sullivan](https://github.com/uid100)
-[back](#source)
+
+[source](#source)
 <hr />
 </details>
-<details>
+<details id="overview">
  <summary>Assignment Overview</summary>
 </details>
 
@@ -61,9 +62,21 @@ With contributions from:
             </div>
         </div>
     </div>
+
+[overview](#overview)
+<hr />
+</details>
+
+<details id="next">
+ <summary>next</summary>
     <div id="tab-2">
         <div class="panel-body">All of the programming assignments are on the course GitHub repository: <a href="https://github.com/schougaard/CISC191ProgrammingChallenges" target="_blank" rel="noopener">https://github.com/schougaard/CISC191ProgrammingChallenges</a><br />Click on the <strong><i>green &lt;&gt;Code</i></strong> button to download the repo if needed.</div>
     </div>
+
+ [next](#next)
+ <hr />
+</details>
+ 
     <div id="tab-3">
         <h2 style="margin-top: 12px; margin-bottom: 12px; color: #2d3b45; font-family: 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;">Code Layout</h2>
         <p style="margin-top: 12px; margin-bottom: 12px; color: #2d3b45; font-family: 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;">You are going to make a game about fishing, and a low-fidelity rending of the GUI looks like this:</p>
