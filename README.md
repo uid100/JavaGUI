@@ -101,7 +101,20 @@ This will help handle the events and actions dealing with clicking the buttons.
 ### GoneFishingView
 This is where you will add all the components that the users will see.
 
-## User Stories
+[code-layout](#code-layout)
+ <hr />
+</details>
+
+<details id="programming-tasks">
+ <summary>Programming Tasks</summary>
+
+This assignment is a little different. In addition to ensuring the unit tests all pass, be sure that all the **User Stories** are implemented.
+
+The tested portion of this programming assignment is very short. The majority of the work will be on creating the GUI and implementing the stories where you will work directly with the GUI rather than the tester file.
+
+<details>
+ <summary>User Stories</summary>
+ 
 Implement the following user stories **one by one** in the order given. If you need additional help, see **Programming Tasks** for more detailed descriptions. 
 1. As a computer user, I can see a window with the title "Gone Fishing" so I can see what program I am running.
 2. As a computer user, when I click on the X in the top corner of the window, the program exits.
@@ -118,161 +131,150 @@ Implement the following user stories **one by one** in the order given. If you n
 13. If I manage to catch all the fish before I run out of tries, I get a message: "Game Over - You Win!" and the program exits.
 14. If I run out of tries before I have caught all the fish, I get a message: "Game Over - Fishes Win!" and the program exits.
 
-[code-layout](#code-layout)
- <hr />
 </details>
 
-<details id="programming-tasks">
- <summary>Programming Tasks</summary>
-    
-        <h2>Programming Task(s)</h2>
-        <p>The tested portion of this programming assignment is very short. The majority of the work will be on creating the GUI and implementing the stories where you will work directly with the GUI rather than the tester file.</p>
-        <details style="margin-bottom: 25px;">
-            <summary style="cursor: pointer;">testGoneFishingButton</summary>
-            <br />
-            <div style="border: thin solid #f1f3f4; padding-top: 5px; padding-right: 15px; padding-bottom: 5px;">
-                <ul>
-                    <li>The buttons in the GUI will keep track of their row-col position in the grid.
-                        <ul>
-                            <li>Add the required instance variables (fields) to keep track of this information.</li>
-                        </ul>
-                    </li>
-                    <li>Complete the constructor to initialize the instance variables (fields)</li>
-                    <li>Add the two getters to be able to get the row and column position of a FishingButton</li>
-                </ul>
-            </div>
-        </details>
-        <details style="margin-bottom: 25px;">
-            <summary style="cursor: pointer;">testGoneFishingView</summary>
-            <br />
-            <div style="border: thin solid #f1f3f4; padding-top: 5px; padding-right: 15px; padding-bottom: 5px;">
-                <ul>
-                    <li>Add an instance variable (field) in the GoneFishingView for a GoneFishingModel</li>
-                    <li>Constructor:
-                        <ol>
-                            <li>Don't forget to assign the model instance variable to the parameter of the constructor</li>
-                            <li>Add a title to the JFrame. REMINDER: The class you are in extends <a href="https://docs.oracle.com/javase/8/docs/api/javax/swing/JFrame.html" target="_blank" rel="noopener">JFrame</a> so you have access to ALL public setters in JFrame. A GoneFishingView IS-A JFrame. Look through the API if you need reminders on available methods or use Eclipse's auto-suggest features. For example, you can write <strong><i>this.</i></strong> in the constructor to look through available methods of the JFrame API. The <strong>this</strong> keyword refers to the current instance of the object and the <i><strong>dot</strong></i> operator, of course,&nbsp; is how you access methods and public attributes of an object.</li>
-                            <li>You'll be working with labels and buttons. Perhaps look through<a href="https://www.javatpoint.com/java-jframe" target="_blank" rel="noopener"> this example</a> first to see if you can simply add to the JFrame then go back and try to get what you need in this actual programming assignment. The hope is you're at least comfortable adding components to the JFrame. Your current trouble should be in placing the components where you want them rather than being too afraid to add any component at all. :)<br />You can run the GoneFishingView class so that you can see what you are adding to the JFrame.</li>
-                            <li>At this point, do not worry too much about the tester file and play around with getting widgets to the JFrame. Additional Hints are shown below</li>
-                        </ol>
-                    </li>
-                </ul>
-            </div>
-        </details>
-        <details style="margin-bottom: 25px;">
-            <summary style="cursor: pointer;">GoneFishingView</summary>
-            <br />
-            <div style="border: thin solid #f1f3f4; padding-top: 5px; padding-right: 15px; padding-bottom: 5px;">
-                <p>You will have to use layout managers in this assignment so that you can position the components (widgets) on the JFrame where you want them to go. Run this file instead of the tester so that you can check out the GUI. Running the tester will close the GUI automatically thus preventing you from checking your progress on building the user interface.</p>
-                <ol>
-                    <li>Start by adding a BorderLayout to the main JFrame. Technically this is the default layout for JFrame, but it's being shown here to introduce you to the setLayout method and the creation of a layout manager object.&nbsp;<br />To add a layout, you must instantiate an object of that type (in this case BorderLayout) and then pass it to the setLayout method of the JFrame or JPanel.You can also do this in one line since we don't need to keep track of the instance of the layout manager. <br />
-                        <pre>this.setLayout(new BorderLayout()); //the this keyword refers to the instance of the GoneFishingView which IS-A JFrame.</pre>
-                        <p>You may need to import the necessary libraries to use BorderLayout like you have done when adding the other components.</p>
-                    </li>
-                    <li>Positioning<br /><img src="https://sdccd.instructure.com/courses/2441328/files/146951908/preview" alt="BorderLayout diagram." data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2441328/files/146951908" data-api-returntype="File" /><br />At this point, you now have access to the BorderLayout positions as shown in the image above.</li>
-                    <li>Add the first JLabel for the "instructions" and add it to the West side. <br />
-                        <pre>JLabel instructions = new JLabel("Click on the buttons to fish");<br />this.add(instructions, BorderLayout.WEST);</pre>
-                        <p>But.... Let's actually add it to a JPanel and then add the JPanel to the JFrame. If you consider the Gone Fishing preview, you are breaking up the JFrame into different areas that are managed by JPanels. You will add the components to the JPanel and then finally place the JPanel in the JFrame.&nbsp;</p>
-                        <pre>JPanel instructions = new JPanel();                                    //Create the JPanel<br />JLabel instructionLabel = new JLabel("Click on the buttons to fish");  //Create and add the component to the JPanel<br />instructions.add(instructionLabel);           <br />this.add(instructions,  BorderLayout.WEST)                             //add the JPanel to the JFrame in the WEST location</pre>
-                        <p>There is an overridden version of add where you can specify where to place the element as shown in the code above. BorderLayout holds static variables for the locations: WEST, EAST, CENTER, NORTH, SOUTH</p>
-                    </li>
-                </ol>
-            </div>
-        </details>
-        <details style="margin-bottom: 25px;">
-            <summary style="cursor: pointer;">"fishing"Panel!</summary>
-            <br />
-            <div style="border: thin solid #f1f3f4; padding-top: 5px; padding-right: 15px; padding-bottom: 5px;">
-                <p><img src="https://sdccd.instructure.com/courses/2441328/files/146951912/preview" alt="Gone Fishing game at start of game." data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2441328/files/146951912" data-api-returntype="File" /></p>
-                <p>The center of the JFrame holds all the buttons which is where the "fishing" will take place. Clicking on the buttons can lead to revealing a "fish".</p>
-                <ol>
-                    <li>Create a new JPanel and add a <a href="https://docs.oracle.com/javase%2F7%2Fdocs%2Fapi%2F%2F/java/awt/GridLayout.html" target="_blank" rel="noopener">GridLayout</a> to hold enough buttons that are shown in the programming assignment. When creating a GridLayout, there are two parameters that you pass to set the # of rows and the # of columns of the grid. As you add components to the JPanel, it would fill these "cells" from left to right and top to bottom. <br />Pause. Look at the model class now. Are there variables in this class that you should use that dictates how many buttons you should have in this fishing game? The model holds some instance variables that can be easily updated later if you wanted to alter the number of buttons. Use the model information when creating the buttons (how many).&nbsp;</li>
-                    <li>Write a nested loop that will allow you to generate the total number of buttons required. The nested loop should resemble a 2D array traversal because you will need the row and column information!<br />The row-column information is required because the buttons in the GUI must store their row-column position!</li>
-                    <li>Add the fishing buttons to the JPanel (not directly to the JFrame).</li>
-                    <li>Add the JPanel object to the center of the JFrame.</li>
-                    <li>You will revisit this section later to connect the listener class to the buttons so that they perform an action when there is a click event on them.</li>
-                </ol>
-            </div>
-        </details>
-        <details style="margin-bottom: 25px;">
-            <summary style="cursor: pointer;">SliderPanel</summary>
-            <br />
-            <div style="border: thin solid #f1f3f4; padding-top: 5px; padding-right: 15px; padding-bottom: 5px;">
-                <p>The instruction label was placed in a <span style="font-family: 'Courier New';">JPanel</span> that was placed in the WEST, and the fishing buttons were placed in a JPanel that was then added to the center. What should you do with the Sliders?</p>
-                <ol>
-                    <li>Create a JPanel where you will add the sliders</li>
-                    <li>Create a Slider and figure out how to set its properties so that it's vertical and looks like the image in this programming assignment. Look for ways to change the following: maximum, tick spacing, paint ticks, paint labels, enabled/disabled, border</li>
-                    <li>Add a layout manager to the JPanel. What kind should you add? Hint: If you want, you can think of that slider section as a 1-by-n grid!</li>
-                    <li>Add the Sliders and any necessary labels to the JPanel.</li>
-                    <li>Add the JPanel to the JFrame on the EAST side.</li>
-                </ol>
-            </div>
-        </details>
-        <details style="margin-bottom: 25px;">
-            <summary style="cursor: pointer;">BottomLabel</summary>
-            <br />
-            <div style="border: thin solid #f1f3f4; padding-top: 5px; padding-right: 15px; padding-bottom: 5px;">
-                <ol>
-                    <li>
-                        <div class="panel-body">
-                            <ol>
-                                <li>Create JPanel to hold the JLabel</li>
-                                <li>Add the JLabel to the JPanel</li>
-                                <li>Add the JPanel to the JFrame in the SOUTH.</li>
-                            </ol>
-                            <p>At this point, you have put in a lot of work getting the user interface up and going. It should roughly resemble the layout in the picture, but some slight changes here and there should be ok. The tester does not test that the layout is exactly the same so you have some leeway.</p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-        </details>
-        <details style="margin-bottom: 25px;">
-            <summary style="cursor: pointer;">fishingButtonListener</summary>
-            <br />
-            <div style="border: thin solid #f1f3f4; padding-top: 5px; padding-right: 15px; padding-bottom: 5px;">
-                <p>The FishingButtonListener class will implement the behaviors of an ActionListener. It will connect the GUI buttons and the model together when users interact with the fishing panel.</p>
-                <ol>
-                    <li>Add the required relationship in the class header so that this class can claim to behave like the ActionListener interface. Import any necessary libraries to use ActionListener.</li>
-                    <li>Once a class implements an interface, it must provide all of the methods that are defined in the interface it implements. Do that now. Recall that Eclipse makes this easy for you by using the first quick fix.</li>
-                    <li>Complete the constructor and be sure to add any required instance variables (fields).</li>
-                </ol>
-                <p>actionPerformed</p>
-                <p>This is the method that will run when there is a mouse click on the fishing buttons. We will now be using the GoneFishingModel.</p>
-                <ol>
-                    <li>Take a moment to do a quick scan of the <span style="font-family: 'Courier New';">GoneFishingModel</span> which keeps track of the state of our game.</li>
-                    <li>Pay special attention to the <span style="font-family: 'Courier New';">fishAt </span>method.<br />What are the formal parameters? <br />What data does this return? What instance variables does it alter?</li>
-                    <li>Comment out the <span style="font-family: 'Courier New';">GoneFishingModel</span>. You will see that there are TODO comments in this file. Take the time now to try to piece together what the model will do for the game.</li>
-                    <li>In the actionPerformed method, figure out how to call the model's fishAt method. Where are the actual parameters coming from to use this method?</li>
-                    <li>The fishAt method should be in a conditional statement to check if it returns true. Change the text of the button to "fish" if there is a fish, otherwise, it should be "X".</li>
-                    <li>Call the GUI class' updateUI method.<br /><br /></li>
-                </ol>
-                <p>&nbsp;</p>
-                <p>addActionListener</p>
-                <p>What you have just completed are the separate code for the button and the listener. The FishingButtonListener needs to be added as the action listener of the buttons once you have completed the majority of the tasks that the listener will complete.</p>
-                <ol>
-                    <li>Go back to the view class</li>
-                    <li>Look for the area where you created the FishingButton objects.</li>
-                    <li>After creating a button, add the actionlistener! The update should look something similar to the code below. <br />
-                        <pre><span style="background-color: #ffff00; color: #000000;">This is the code inside the nested loop from the view constructor	<br /></span><br /> //create a FishingButton!<br />  FishingButton fish = new FishingButton(row, col);<br />				<br />  //connect the listener<br />  fish.addActionListener( new FishingButtonListener(model, this, fish) );</pre>
-                    </li>
-                </ol>
-            </div>
-        </details>
-        <details style="margin-bottom: 25px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <summary style="cursor: pointer;">GoneFishingView-updateUI</summary>
-            <br />
-            <div style="border: thin solid #f1f3f4; padding-top: 5px; padding-right: 15px; padding-bottom: 5px;">
-                <ul>
-                    <li>
-                        <p>This class has access to the model therefore it always has access to the latest updates. Find a way to update the sliders by getting the updated information from the model.&nbsp;</p>
-                        <p>Tidy up the Fishing View. For example, add a minimum dimension so that when you click on the buttons, you do not end up with any ellipses due to the buttons being too small to display the text. You can also play around with styling the buttons if you want to explore further customization!</p>
-                    </li>
-                </ul>
-            </div>
-        </details>
-    </div>
+<details>
+  <summary>testGoneFishingButton</summary>
 
-     [programming-tasks](#programming-tasks)
+ - The buttons in the GUI will keep track of their row-col position in the grid.
+   - Add the required instance variables (fields) to keep track of this information.
+ - Complete the constructor to initialize the instance variables (fields)
+ - Add the two getters to be able to get the row and column position of a FishingButton
+
+</details>
+<details>
+  <summary>testGoneFishingView</summary>
+  - Add an instance variable (field) in the GoneFishingView for a GoneFishingModel</li>
+  - Constructor:
+    - Don't forget to assign the model instance variable to the parameter of the constructor
+    - Add a title to the JFrame. REMINDER: The class you are in extends [JFrame](https://docs.oracle.com/javase/8/docs/api/javax/swing/JFrame.html) so you have access to ALL public setters in `JFrame`. A GoneFishingView IS-A JFrame. Look through the API if you need reminders on available methods or use Eclipse's auto-suggest features. For example, you can write _**this**_ in the constructor to look through available methods of the JFrame API. The **this** keyword refers to the current instance of the object and the **dot** operator, of course, is how you access methods and public attributes of an object.
+    - You'll be working with labels and buttons. Perhaps look through [this example](https://www.javatpoint.com/java-jframe) first to see if you can simply add to the `JFrame` then go back and try to get what you need in this actual programming assignment. The hope is you're at least comfortable adding components to the `JFrame`. Your current trouble should be in placing the components where you want them rather than being too afraid to add any component at all. :)<br />You can run the GoneFishingView class so that you can see what you are adding to the JFrame.
+ - At this point, do not worry too much about the tester file and play around with getting widgets to the JFrame. Additional Hints are shown below
+
+</details>
+<details>
+  <summary>GoneFishingView</summary>
+You will have to use layout managers in this assignment so that you can position the components (widgets) on the JFrame where you want them to go. Run this file instead of the tester so that you can check out the GUI. Running the tester will close the GUI automatically thus preventing you from checking your progress on building the user interface.
+
+1. Start by adding a BorderLayout to the main JFrame. Technically this is the default layout for JFrame, but it's being shown here to introduce you to the setLayout method and the creation of a layout manager object.&nbsp;<br />To add a layout, you must instantiate an object of that type (in this case BorderLayout) and then pass it to the setLayout method of the JFrame or JPanel.You can also do this in one line since we don't need to keep track of the instance of the layout manager.
+```
+this.setLayout(new BorderLayout()); //the this keyword refers to the instance of the GoneFishingView which IS-A JFrame.
+```
+You may need to import the necessary libraries to use BorderLayout like you have done when adding the other components.</p>
+3. Positioning<br />
+[BorderLayout diagram](images/positioning.png)<br />
+At this point, you now have access to the BorderLayout positions as shown in the image above.
+4. Add the first `JLabel` for the _instructions_ and add it to the West side.
+```
+JLabel instructions = new JLabel("Click on the buttons to fish");<br />this.add(instructions, BorderLayout.WEST);
+```
+But.... Let's actually add it to a `JPanel` and then add the `JPanel` to the `JFrame`.
+If you consider the Gone Fishing preview, you are breaking up the JFrame into different areas that are managed by JPanels.
+You will add the components to the `JPanel` and then finally place the `JPanel` in the `JFrame.`
+```
+JPanel instructions = new JPanel();                                    //Create the JPanel
+JLabel instructionLabel = new JLabel("Click on the buttons to fish");  //Create and add the component to the JPanel
+instructions.add(instructionLabel);
+this.add(instructions,  BorderLayout.WEST)                             //add the JPanel to the JFrame in the WEST location
+```
+
+There is an overridden version of `add` where you can specify where to place the element as shown in the code above. 
+BorderLayout holds static variables for the locations: `WEST`, `EAST`, `CENTER`, `NORTH`, `SOUTH`
+
+</details>
+<details>
+  <summary>"fishing"Panel!</summary>
+
+[Gone Fishing game at start of game.](images/GoneFishing_start)
+The center of the JFrame holds all the buttons which is where the "fishing" will take place. Clicking on the buttons can lead to revealing a "fish".
+
+1. Create a new `JPanel` and add a ![GridLayout](https://docs.oracle.com/javase%2F7%2Fdocs%2Fapi%2F%2F/java/awt/GridLayout.html) to hold enough buttons that are shown in the programming assignment.
+     - When creating a GridLayout, there are two parameters that you pass to set the # of rows and the # of columns of the grid. As you add components to the JPanel, it would fill these "cells" from left to right and top to bottom.
+     - Pause. Look at the model class now. Are there variables in this class that you should use that dictates how many buttons you should have in this fishing game? The model holds some instance variables that can be easily updated later if you wanted to alter the number of buttons. Use the model information when creating the buttons (how man
+2. Write a nested loop that will allow you to generate the total number of buttons required. The nested loop should resemble a 2D array traversal because you will need the row and column information!
+ The row-column information is required because the buttons in the GUI must store their row-column position!
+3. Add the fishing buttons to the `JPanel` (not directly to the `JFrame`).</li>
+4. Add the `JPanel` object to the center of the `JFrame`.</li>
+5. You will revisit this section later to connect the listener class to the buttons so that they perform an action when there is a click event on them.
+
+</details>
+<details>
+  <summary>SliderPanel</summary>
+
+The instruction label was placed in a `JPanel` that was placed in the `WEST`, and the fishing buttons were placed in a `JPanel` that was then added to the center. What should you do with the Sliders?
+ 1. Create a JPanel where you will add the sliders</li>
+ 2. Create a Slider and figure out how to set its properties so that it's vertical and looks like the image in this programming assignment. Look for ways to change the following: maximum, tick spacing, paint ticks, paint labels, enabled/disabled, border
+ 3. Add a layout manager to the JPanel. What kind should you add?
+    **Hint:** _If you want, you can think of that slider section as a 1-by-n grid!_
+ 4. Add the Sliders and any necessary labels to the JPanel.
+ 5. Add the JPanel to the JFrame on the EAST side.
+ 
+ </details>
+ <details>
+  <summary>BottomLabel</summary>
+  
+ 1. Create JPanel to hold the JLabel
+ 2. Add the JLabel to the JPanel
+ 3. Add the JPanel to the JFrame in the SOUTH.
+
+At this point, you have put in a lot of work getting the user interface up and going. 
+It should roughly resemble the layout in the picture, but some slight changes here and there should be ok. 
+The tester does not test that the layout is exactly the same so you have some leeway.
+
+</details>
+<details>
+  <summary>fishingButtonListener</summary>
+
+#### FishingButtonListener
+The FishingButtonListener class will implement the behaviors of an ActionListener. 
+It will connect the GUI buttons and the model together when users interact with the fishing panel.
+
+ 1. Add the required relationship in the class header so that this class can claim to behave like the ActionListener interface. Import any necessary libraries to use ActionListener.
+ 2. Once a class implements an interface, it must provide all of the methods that are defined in the interface it implements. Do that now. Recall that Eclipse makes this easy for you by using the first quick fix.
+ 3. Complete the constructor and be sure to add any required instance variables (fields).
+ 
+ #### actionPerformed()
+This is the method that will run when there is a mouse click on the fishing buttons. 
+We will now be using the `GoneFishingModel.`
+1. Take a moment to do a quick scan of the `GoneFishingModel` which keeps track of the state of our game.
+2. Pay special attention to the `fishAt()`
+    - What are the formal parameters? 
+    - What data does this return?
+    - What instance variables does it alter?
+3. Comment out the `GoneFishingModel`. You will see that there are `TODO` comments in this file. Take the time now to try to piece together what the model will do for the game.
+4. In the actionPerformed method, figure out how to call the model's `fishAt()` method. Where are the actual parameters coming from to use this method?
+5. The `fishAt()` method should be in a conditional statement to check if it returns true. Change the text of the button to "fish" if there is a fish, otherwise, it should be "X".
+6. Call the GUI class' updateUI method.
+
+#### addActionListener
+What you have just completed are the separate code for the button and the listener. 
+The `FishingButtonListener` needs to be added as the action listener of the buttons once you have completed the majority of the tasks that the listener will complete.
+
+1. Go back to the view class
+2. Look for the area where you created the FishingButton objects.
+3. After creating a button, add the actionlistener! The update should look something similar to the code below.
+
+This is the code inside the nested loop from the view constructor
+```
+//create a FishingButton!
+FishingButton fish = new FishingButton(row, col);
+
+//connect the listener
+fish.addActionListener( new FishingButtonListener(model, this, fish) );
+```
+
+</details>
+<details style="margin-bottom: 25px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <summary style="cursor: pointer;">GoneFishingView-updateUI</summary>
+
+This class has access to the model therefore it always has access to the latest updates. 
+Find a way to update the sliders by getting the updated information from the model.
+
+Tidy up the Fishing View. For example, add a minimum dimension so that when you click on the buttons, you do not end up with any ellipses due to the buttons being too small to display the text. You can also play around with styling the buttons if you want to explore further customization!
+
+ </details>
+
+[programming-tasks](#programming-tasks)
  <hr />
 </details>
 
