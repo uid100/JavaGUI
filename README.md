@@ -23,63 +23,45 @@ With contributions from:
 [source](#source)
 <hr />
 </details>
+
 <details id="overview">
  <summary>Assignment Overview</summary>
-</details>
+ 
+Learning Java APIs can help you develop a variety of skills, including:
+ - **Problem-solving skills:** Java APIs provide a wide range of functionality that can be used to solve a variety of problems. Learning how to use Java APIs effectively will help you develop your problem-solving skills.
+ - **Analytical skills:** When using Java APIs, you need to be able to understand the documentation and identify the appropriate classes and methods to use. This will help you develop your analytical skills.
+ - **Design skills:** Java APIs can be used to design and implement complex applications. Learning how to use Java APIs effectively will help you develop your design skills.
+ - **Coding skills:** Java APIs are written in Java, so learning how to use them will help you improve your Java coding skills.
+ - **API development skills:** Once you have a good understanding of how to use Java APIs, you can start to develop your own APIs. This is a valuable skill that can make you more marketable to employers.
 
-## Assignment Overview
+In addition to these general skills, learning specific Java APIs can also help you develop specific knowledge and expertise. For example, learning the JDBC API can help you develop expertise in database programming. Learning the Swing API can help you develop expertise in GUI development. And learning the Java EE APIs can help you develop expertise in enterprise application development.
 
-<div class="enhanceable_content tabs">
-    <ul>&nbsp; &nbsp; &nbsp; &nbsp;
-        <li><a href="#tab-1">Assignment Overview</a></li>
-        &nbsp; &nbsp; &nbsp; &nbsp;
-        <li><a href="#tab-2">Setup</a></li>
-        &nbsp; &nbsp; &nbsp; &nbsp;
-        <li><a href="#tab-3">Code Layout</a></li>
-        &nbsp; &nbsp; &nbsp; &nbsp;
-        <li><a href="#tab-4">Programming Task(s)</a></li>
-        &nbsp; &nbsp; &nbsp; &nbsp;
-        <li><a href="#tab-5">Submission</a></li>
-        &nbsp; &nbsp;
-    </ul>
-    <div id="tab-1">
-        <p>Learning Java APIs can help you develop a variety of skills, including:</p>
-        <div id="collapse1" class="panel-collapse collapse in" aria-expanded="true">
-            <div id="summer0" class="panel-body summernote">
-                <div class="resize-observable">
-                    <div class="markdown markdown-main-panel" dir="ltr">
-                        <ul data-sourcepos="3:1-8:0">
-                            <li data-sourcepos="3:1-3:219"><strong>Problem-solving skills:</strong> Java APIs provide a wide range of functionality that can be used to solve a variety of problems. Learning how to use Java APIs effectively will help you develop your problem-solving skills.</li>
-                            <li data-sourcepos="4:1-4:206"><strong>Analytical skills:</strong> When using Java APIs, you need to be able to understand the documentation and identify the appropriate classes and methods to use. This will help you develop your analytical skills.</li>
-                            <li data-sourcepos="5:1-5:172"><strong>Design skills:</strong> Java APIs can be used to design and implement complex applications. Learning how to use Java APIs effectively will help you develop your design skills.</li>
-                            <li data-sourcepos="6:1-6:126"><strong>Coding skills:</strong> Java APIs are written in Java, so learning how to use them will help you improve your Java coding skills.</li>
-                            <li data-sourcepos="7:1-8:0"><strong>API development skills:</strong> Once you have a good understanding of how to use Java APIs, you can start to develop your own APIs. This is a valuable skill that can make you more marketable to employers.</li>
-                        </ul>
-                        <p data-sourcepos="9:1-9:389">In addition to these general skills, learning specific Java APIs can also help you develop specific knowledge and expertise. For example, learning the JDBC API can help you develop expertise in database programming. Learning the Swing API can help you develop expertise in GUI development. And learning the Java EE APIs can help you develop expertise in enterprise application development.</p>
-                        <p data-sourcepos="11:1-11:110">Overall, learning Java APIs is a great way to develop your skills and make yourself a more valuable developer.<br /><br />Java <span class="citation-0">Swing is a GUI widget toolkit for Java. It is part of Oracle's Java Foundation Classes (JFC) - </span><span class="citation-0 citation-1 citation-end-0">an API for providing a graphical user interface</span><span class="citation-1"> for Java programs. Swing was developed to provide a more sophisticated set of GUI components than the earlier Abstract Window Toolkit (AWT). </span><span class="citation-1 citation-end-1">Swing</span> components are platform-independent, meaning that they will look and behave the same on any platform that supports Java. Swing components are also lightweight, meaning that they do not consume a lot of system resources. Swing provides a wide variety of GUI components, including buttons, labels, text fields, menus, tables, and trees. Swing also supports a pluggable look and feel, which allows you to change the appearance of your Swing application without having to rewrite any code. Java Swing is a popular choice for developing graphical user interfaces for Java applications. It is used to develop a wide variety of applications, including desktop applications, web applications, and mobile applications.<br /><br />In this assignment you will implementing a simple fishing game that will have you explore many of the most common widgets in the Java Swing library. You will also be asked to consider coding the connection between the GUI and the code behind the scenes using the model-view-controller software design pattern.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+Overall, learning Java APIs is a great way to develop your skills and make yourself a more valuable developer.
+ 
+Java Swing is a GUI widget toolkit for Java. It is part of Oracle's Java Foundation Classes (JFC) - an API for providing a graphical user interface for Java programs. Swing was developed to provide a more sophisticated set of GUI components than the earlier Abstract Window Toolkit (AWT). Swing components are platform-independent, meaning that they will look and behave the same on any platform that supports Java. Swing components are also lightweight, meaning that they do not consume a lot of system resources. Swing provides a wide variety of GUI components, including buttons, labels, text fields, menus, tables, and trees. Swing also supports a pluggable look and feel, which allows you to change the appearance of your Swing application without having to rewrite any code. Java Swing is a popular choice for developing graphical user interfaces for Java applications. It is used to develop a wide variety of applications, including desktop applications, web applications, and mobile applications.
+  
+In this assignment you will implementing a simple fishing game that will have you explore many of the most common widgets in the Java Swing library. You will also be asked to consider coding the connection between the GUI and the code behind the scenes using the model-view-controller software design pattern.
 
 [overview](#overview)
+
 <hr />
 </details>
 
-<details id="next">
- <summary>next</summary>
+<details id="setup">
+ <summary>setup</summary>
     <div id="tab-2">
         <div class="panel-body">All of the programming assignments are on the course GitHub repository: <a href="https://github.com/schougaard/CISC191ProgrammingChallenges" target="_blank" rel="noopener">https://github.com/schougaard/CISC191ProgrammingChallenges</a><br />Click on the <strong><i>green &lt;&gt;Code</i></strong> button to download the repo if needed.</div>
     </div>
 
- [next](#next)
+ [setup](#setup)
  <hr />
 </details>
+
+<details id="code-layout">
+ <summary>code layout</summary>
  
-    <div id="tab-3">
-        <h2 style="margin-top: 12px; margin-bottom: 12px; color: #2d3b45; font-family: 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;">Code Layout</h2>
-        <p style="margin-top: 12px; margin-bottom: 12px; color: #2d3b45; font-family: 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;">You are going to make a game about fishing, and a low-fidelity rending of the GUI looks like this:</p>
+You are going to make a game about fishing, and a low-fidelity rending of the GUI looks like this:
+
         <div><img src="https://sdccd.instructure.com/courses/2441328/files/146951807/preview" alt="Gone Fishing game in starting state." width="708" height="258" data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2441328/files/146951807" data-api-returntype="File" /></div>
         <div>
             <p style="margin-top: 12px; margin-bottom: 12px; color: #2d3b45; font-family: 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;">The game is played by clicking on the buttons in the middle of the window:</p>
@@ -122,7 +104,14 @@ With contributions from:
             </div>
         </div>
     </div>
-    <div id="tab-4">
+
+ [code-layout](#code-layout)
+ <hr />
+</details>
+
+<details id="programming-tasks">
+ <summary>Programming Tasks</summary>
+    
         <h2>Programming Task(s)</h2>
         <p>The tested portion of this programming assignment is very short. The majority of the work will be on creating the GUI and implementing the stories where you will work directly with the GUI rather than the tester file.</p>
         <details style="margin-bottom: 25px;">
@@ -269,6 +258,11 @@ With contributions from:
             </div>
         </details>
     </div>
+
+     [programming-tasks](#programming-tasks)
+ <hr />
+</details>
+
     <div id="tab-5">
         <p>To turn in your project:</p>
         <ol>
