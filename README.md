@@ -32,6 +32,12 @@ With contributions from:
 
 In this assignment you will implementing a simple fishing game that will have you explore many of the most common widgets in the Java Swing library. You will also be asked to consider coding the connection between the GUI and the code behind the scenes using the model-view-controller software design pattern.
 
+This assignment is a little different.
+
+In addition to ensuring the unit tests all pass, and be sure that all the User Stories are implemented.
+
+The tested portion of this programming assignment is very short. The majority of the work will be on creating the GUI and implementing the stories where you will work directly with the GUI rather than the tester file.
+
   <details id="api">
    <summary>Java APIs</summary>
    
@@ -111,11 +117,11 @@ This is where you will add all the components that the users will see.
 <details id="programming-tasks">
  <summary>Programming Tasks</summary>
 
-This assignment is a little different. 
-
-In addition to ensuring the unit tests all pass, **and** be sure that all the **User Stories** are implemented.
+1. Make sure all unit tests all pass, **and**
+2. All the **User Stories** are implemented.
 
 The tested portion of this programming assignment is very short. The majority of the work will be on creating the GUI and implementing the stories where you will work directly with the GUI rather than the tester file.
+
 
 <details>
  <summary>User Stories</summary>
