@@ -26,7 +26,10 @@ With contributions from:
 
 <details id="overview">
  <summary>Assignment Overview</summary>
- 
+
+  <details id="api">
+   <summary>Java APIs</summary>
+   
 Learning Java APIs can help you develop a variety of skills, including:
  - **Problem-solving skills:** Java APIs provide a wide range of functionality that can be used to solve a variety of problems. Learning how to use Java APIs effectively will help you develop your problem-solving skills.
  - **Analytical skills:** When using Java APIs, you need to be able to understand the documentation and identify the appropriate classes and methods to use. This will help you develop your analytical skills.
@@ -37,11 +40,17 @@ Learning Java APIs can help you develop a variety of skills, including:
 In addition to these general skills, learning specific Java APIs can also help you develop specific knowledge and expertise. For example, learning the JDBC API can help you develop expertise in database programming. Learning the Swing API can help you develop expertise in GUI development. And learning the Java EE APIs can help you develop expertise in enterprise application development.
 
 Overall, learning Java APIs is a great way to develop your skills and make yourself a more valuable developer.
- 
+
+ </details>
+ <details id="swing">
+  <summary>Swing</summary>
+  
 Java Swing is a GUI widget toolkit for Java. It is part of Oracle's Java Foundation Classes (JFC) - an API for providing a graphical user interface for Java programs. Swing was developed to provide a more sophisticated set of GUI components than the earlier Abstract Window Toolkit (AWT). Swing components are platform-independent, meaning that they will look and behave the same on any platform that supports Java. Swing components are also lightweight, meaning that they do not consume a lot of system resources. Swing provides a wide variety of GUI components, including buttons, labels, text fields, menus, tables, and trees. Swing also supports a pluggable look and feel, which allows you to change the appearance of your Swing application without having to rewrite any code. Java Swing is a popular choice for developing graphical user interfaces for Java applications. It is used to develop a wide variety of applications, including desktop applications, web applications, and mobile applications.
   
 In this assignment you will implementing a simple fishing game that will have you explore many of the most common widgets in the Java Swing library. You will also be asked to consider coding the connection between the GUI and the code behind the scenes using the model-view-controller software design pattern.
 
+  </details>
+  
 [overview](#overview)
 
 <hr />
