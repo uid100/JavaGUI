@@ -26,7 +26,7 @@ With contributions from:
 
 <details id="overview">
  <summary>Assignment Overview</summary>
-
+  <hr />
   <details id="api">
    <summary>Java APIs</summary>
    
