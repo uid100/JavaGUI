@@ -111,7 +111,9 @@ This is where you will add all the components that the users will see.
 <details id="programming-tasks">
  <summary>Programming Tasks</summary>
 
-This assignment is a little different. In addition to ensuring the unit tests all pass, be sure that all the **User Stories** are implemented.
+This assignment is a little different. 
+
+In addition to ensuring the unit tests all pass, **and** be sure that all the **User Stories** are implemented.
 
 The tested portion of this programming assignment is very short. The majority of the work will be on creating the GUI and implementing the stories where you will work directly with the GUI rather than the tester file.
 
