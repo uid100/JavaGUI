@@ -28,6 +28,9 @@ With contributions from:
  <summary>Assignment Overview</summary>
   <hr />
   <details id="api">
+
+In this assignment you will implementing a simple fishing game that will have you explore many of the most common widgets in the Java Swing library. You will also be asked to consider coding the connection between the GUI and the code behind the scenes using the model-view-controller software design pattern.
+
    <summary>Java APIs</summary>
    
 Learning Java APIs can help you develop a variety of skills, including:
@@ -47,8 +50,6 @@ Overall, learning Java APIs is a great way to develop your skills and make yours
   
 Java Swing is a GUI widget toolkit for Java. It is part of Oracle's Java Foundation Classes (JFC) - an API for providing a graphical user interface for Java programs. Swing was developed to provide a more sophisticated set of GUI components than the earlier Abstract Window Toolkit (AWT). Swing components are platform-independent, meaning that they will look and behave the same on any platform that supports Java. Swing components are also lightweight, meaning that they do not consume a lot of system resources. Swing provides a wide variety of GUI components, including buttons, labels, text fields, menus, tables, and trees. Swing also supports a pluggable look and feel, which allows you to change the appearance of your Swing application without having to rewrite any code. Java Swing is a popular choice for developing graphical user interfaces for Java applications. It is used to develop a wide variety of applications, including desktop applications, web applications, and mobile applications.
   
-In this assignment you will implementing a simple fishing game that will have you explore many of the most common widgets in the Java Swing library. You will also be asked to consider coding the connection between the GUI and the code behind the scenes using the model-view-controller software design pattern.
-
   </details>
   
 [overview](#overview)
