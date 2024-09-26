@@ -2,7 +2,7 @@
  
 Java Test Driven Development (TDD) project to exercise Java Graphical User Interface (GUI) App with unit testing ( with **JUnit** )
 
-![Gone Fishing](images/GoneFishing_play.png){width=40%}
+<img src="./images/GoneFishing_play.png" width="35%" alt="gone fishing!">
 
 
 <details id="source">
