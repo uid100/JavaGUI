@@ -263,25 +263,8 @@ You are going to make a game about fishing, and a low-fidelity rending of the GU
  <hr />
 </details>
 
-    <div id="tab-5">
-        <p>To turn in your project:</p>
-        <ol>
-            <li>Comment your code even if you are not 100% sure yet. You will receive feedback and be able to fix any issues for resubmissions.</li>
-            <li>Export your project (as explained in <a id="140787516" class="instructure_file_link instructure_scribd_file inline_disabled" href="https://sdccd.instructure.com/courses/2441328/files/140787516?wrap=1" target="_blank" rel="noopener" data-canvas-previewable="true" data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2441328/files/140787516" data-api-returntype="File"><span class="instructure_file_holder link_holder instructure_file_link_holder">HowToSubmitEclipseProject.docx</span></a></li>
-            <li>Make sure your project has your name on it first! Right-click on the project in Eclipse under package explorer then <strong>refactor-&gt;rename</strong>
-                <ol>
-                    <li>Your exported Eclipse project that should have been renamed prior to exporting it as a zip. Remember you are adding your name at the end of the project name.</li>
-                    <li>Every java source file that was you edited to pass the JUnit test or mentioned in the programming assignment specification.</li>
-                    <li>A screenshot showing how many JUnit tests passed.Click on the "Submit" button on this page, then add the following files individually:</li>
-                </ol>
-            </li>
-        </ol>
-        <p><i>Note: You are turning in the Eclipse project so that I can easily open it and run it on my computer.&nbsp; You are also turning in the .java file so that I can easily provide feedback to you via Canvas. The screenshot of the JUnit tests passed gives us an idea how you did with the test cases. </i></p>
-    </div>
-</div>
-
-
-
+<details id=submission>
+ <summary>Submission</summary>
 
 ## Complete and zip the project
 1. Run and add the code to the src folder until the tests are successful.
@@ -293,8 +276,11 @@ as needed for the tests to pass.
     - update the javadoc comments at the top of the file to add your name as author
     - update the comments for each method in the file.
 4. Export the project as a zip file and submit your work.
+   _Note: You are turning in the Eclipse project so that I can easily open it and run it on my computer._
 
-___________
+     [submission](#submission)
+ <hr />
+</details>
 
 ## Rubric
 
