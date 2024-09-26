@@ -308,9 +308,12 @@ as needed for the tests to pass.
  <hr />
 </details>
 
-## Rubric
+<details>
+ <summary>Rubric</summary>
 
 [Rubric](Rubric.md)
+
+</details>
 
 
 ___________
