@@ -76,11 +76,11 @@ Java Swing is a GUI widget toolkit for Java. It is part of Oracle's Java Foundat
  
 You are going to make a game about fishing, and a low-fidelity rending of the GUI looks like this:
 
-![Gone Fishing game in starting state.](GoneFishing_start.png)
+![Gone Fishing game in starting state.](images/GoneFishing_start.png)
 
 The game is played by clicking on the buttons in the middle of the window:
 
-![Gone Fishing game in partially played state.](GoneFishing_play.png)
+![Gone Fishing game in partially played state.](images/GoneFishing_play.png)
 
 The layout of this project is similar to the the java classes lab. You will implement the logic of several java classes and interfaces.
 
@@ -88,7 +88,7 @@ When the player clicks on a location without fish, the button turns into an icon
 
 When the last fish has been caught or the last try has been used the game is over:
 
-![Gone Fishing game when fishes win.](GoneFishing_done.png)
+![Gone Fishing game when fishes win.](images/GoneFishing_done.png)
 
 There are 3 main files you will edit in this programming assignment: `FishingButton`, `FishingButtonListener`, and `GoneFishingView`.
 
