@@ -1,10 +1,13 @@
 # JavaGUI
  
-Java Test Driven Development (TDD) project to exercise Java data structures with unit testing ( with **JUnit** )
+Java Test Driven Development (TDD) project to exercise Java Graphical User Interface (GUI) App with unit testing ( with **JUnit** )
+
+## About
 
 <details>
-  <summary><em>derived from CISC191GUI</em></summary>
- 
+  <summary>Source</summary>
+
+ <em>derived from CISC191GUI</em>
 ![220px-MesaLogo](https://github.com/schougaard/SanDiegoMesaCISC191ProgrammingChallenges/assets/716243/334f6724-6afa-4198-9eff-7c49c472cd35)
 
 # San Diego Mesa College CISC 191 Programming Challenges
@@ -17,7 +20,10 @@ Created by
 With contributions from: 
 - Dom David,
 - [Dan Sullivan](https://github.com/uid100)
-
+<hr />
+</details>
+<details>
+ <summary>Assignment Overview</summary>
 </details>
 
 ## Assignment Overview
