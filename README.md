@@ -57,7 +57,7 @@ Java Swing is a GUI widget toolkit for Java. It is part of Oracle's Java Foundat
 </details>
 
 <details id="setup">
- <summary>setup</summary>
+ <summary>Setup</summary>
     
 1. From the <> Code dropdown link in the repository (above), download the Zip file to your computer.
 2. Extract the files to your working folder
@@ -72,54 +72,53 @@ Java Swing is a GUI widget toolkit for Java. It is part of Oracle's Java Foundat
 </details>
 
 <details id="code-layout">
- <summary>code layout</summary>
+ <summary>Code Layout</summary>
  
 You are going to make a game about fishing, and a low-fidelity rending of the GUI looks like this:
 
-        <div><img src="https://sdccd.instructure.com/courses/2441328/files/146951807/preview" alt="Gone Fishing game in starting state." width="708" height="258" data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2441328/files/146951807" data-api-returntype="File" /></div>
-        <div>
-            <p style="margin-top: 12px; margin-bottom: 12px; color: #2d3b45; font-family: 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;">The game is played by clicking on the buttons in the middle of the window:</p>
-        </div>
-        <div><img src="https://sdccd.instructure.com/courses/2441328/files/146951808/preview" alt="Gone Fishing game in partially played state." width="708" height="258" data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2441328/files/146951808" data-api-returntype="File" /></div>
-        <p><br />The layout of this project is similar to the the java classes lab. You will implement the logic of several java classes and interfaces.</p>
-        <div>
-            <p style="margin-top: 12px; margin-bottom: 12px; color: #2d3b45; font-family: 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;">When the player clicks on a location without fish, the button turns into an icon indicating empty, and the number of tries is reduced. When the player clicks on a location with a school of fish, the button displays a fish icon, and the number of tries and the number of fish remaining are both reduced.</p>
-            <p style="margin-top: 12px; margin-bottom: 12px; color: #2d3b45; font-family: 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;">When the last fish has been caught or the last try has been used the game is over:</p>
-        </div>
-        <div><img src="https://sdccd.instructure.com/courses/2441328/files/146951811/preview" alt="Gone Fishing game when fishes win." width="706" height="258" data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2441328/files/146951811" data-api-returntype="File" /></div>
-        <div>There are 3 main files you will edit in this programming assignment: FishingButton, FishingButtonListener, and GoneFishingView.<br />
-            <div>
-                <h3>FishingButton</h3>
-            </div>
-            <div>The buttons for the "fishing" portion of this mini-game.</div>
-            <h3>FinishButtonListener</h3>
-            <div>This will help handle the events and actions dealing with clicking the buttons.</div>
-            <h3>GoneFishingView</h3>
-            <div>This is where you will add all the components that the users will see.</div>
-            <div><span style="color: #2d3b45; font-family: 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.8em;">User Stories</span></div>
-            <div>
-                <p style="margin-top: 12px; margin-bottom: 12px; color: #2d3b45; font-family: 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;">Implement the following user stories&nbsp;<strong>one by one</strong>&nbsp;in the order given. If you need additional help, go to the more detailed descriptions on the Programming Task page.</p>
-                <ol style="padding: 0px; margin-right: 0px; margin-bottom: 6px; margin-left: 25px; color: #2d3b45; font-family: 'Lato Extended', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-                    <li>As a computer user, I can see a window with the title "Gone Fishing" so I can see what program I am running.</li>
-                    <li>As a computer user, when I click on the X in the top corner of the window, the program exits.</li>
-                    <li>As a computer user, I can see instructions in the window.</li>
-                    <li>As a computer user, I can see who programmed the game.</li>
-                    <li>As a computer user, I can see the grid where the game is played. The grid is 6 by 6 buttons.</li>
-                    <li>As a computer user, when I start the program, I can see all the UI widgets in the game.</li>
-                    <li>As a player, I can see how many tries I have left on a slider, so I can see if I am winning. I start with 30 tries.</li>
-                    <li>As a player, I can see how many schools of fish are left on a slider, so I can see if the fish are winning. The game starts with 10 schools of fish.</li>
-                    <li>When I click on a button in the grid, it shows me if I caught a fish or not, so I can see my fishing skills.</li>
-                    <li>When I click on a button in the grid, I cannot click on it again, so I cannot cheat.</li>
-                    <li>When I click on a button, the number of tries goes down by one.</li>
-                    <li>When I click on a button, and I caught a school of fish, the number of schools of fish goes down by one.</li>
-                    <li>If I manage to catch all the fish before I run out of tries, I get a message: "Game Over - You Win!" and the program exits.</li>
-                    <li>If I run out of tries before I have caught all the fish, I get a message: "Game Over - Fishes Win!" and the program exits.</li>
-                </ol>
-            </div>
-        </div>
-    </div>
+![Gone Fishing game in starting state.](GoneFishing_start.png)
 
- [code-layout](#code-layout)
+The game is played by clicking on the buttons in the middle of the window:
+
+![Gone Fishing game in partially played state.](GoneFishing_play.png)
+
+The layout of this project is similar to the the java classes lab. You will implement the logic of several java classes and interfaces.
+
+When the player clicks on a location without fish, the button turns into an icon indicating empty, and the number of tries is reduced. When the player clicks on a location with a school of fish, the button displays a fish icon, and the number of tries and the number of fish remaining are both reduced.
+
+When the last fish has been caught or the last try has been used the game is over:
+
+![Gone Fishing game when fishes win.](GoneFishing_done.png)
+
+There are 3 main files you will edit in this programming assignment: `FishingButton`, `FishingButtonListener`, and `GoneFishingView`.
+
+### FishingButton
+The buttons for the "fishing" portion of this mini-game.
+
+### FinishButtonListener
+This will help handle the events and actions dealing with clicking the buttons.
+
+### GoneFishingView
+This is where you will add all the components that the users will see.
+
+## User Stories
+Implement the following user stories **one by one** in the order given. If you need additional help, see **Programming Tasks** for more detailed descriptions. 
+1. As a computer user, I can see a window with the title "Gone Fishing" so I can see what program I am running.
+2. As a computer user, when I click on the X in the top corner of the window, the program exits.
+3. As a computer user, I can see instructions in the window.
+4. As a computer user, I can see who programmed the game.
+5. As a computer user, I can see the grid where the game is played. The grid is 6 by 6 buttons.
+6. As a computer user, when I start the program, I can see all the UI widgets in the game.
+7. As a player, I can see how many tries I have left on a slider, so I can see if I am winning. I start with 30 tries.
+8. As a player, I can see how many schools of fish are left on a slider, so I can see if the fish are winning. The game starts with 10 schools of fish.
+9. When I click on a button in the grid, it shows me if I caught a fish or not, so I can see my fishing skills.
+10. When I click on a button in the grid, I cannot click on it again, so I cannot cheat.
+11. When I click on a button, the number of tries goes down by one.
+12. When I click on a button, and I caught a school of fish, the number of schools of fish goes down by one.
+13. If I manage to catch all the fish before I run out of tries, I get a message: "Game Over - You Win!" and the program exits.
+14. If I run out of tries before I have caught all the fish, I get a message: "Game Over - Fishes Win!" and the program exits.
+
+[code-layout](#code-layout)
  <hr />
 </details>
 
