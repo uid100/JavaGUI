@@ -26,11 +26,10 @@ With contributions from:
 
 <details id="overview">
  <summary>Assignment Overview</summary>
-  <hr />
-  <details id="api">
 
 In this assignment you will implementing a simple fishing game that will have you explore many of the most common widgets in the Java Swing library. You will also be asked to consider coding the connection between the GUI and the code behind the scenes using the model-view-controller software design pattern.
 
+  <details id="api">
    <summary>Java APIs</summary>
    
 Learning Java APIs can help you develop a variety of skills, including:
