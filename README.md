@@ -58,9 +58,14 @@ Java Swing is a GUI widget toolkit for Java. It is part of Oracle's Java Foundat
 
 <details id="setup">
  <summary>setup</summary>
-    <div id="tab-2">
-        <div class="panel-body">All of the programming assignments are on the course GitHub repository: <a href="https://github.com/schougaard/CISC191ProgrammingChallenges" target="_blank" rel="noopener">https://github.com/schougaard/CISC191ProgrammingChallenges</a><br />Click on the <strong><i>green &lt;&gt;Code</i></strong> button to download the repo if needed.</div>
-    </div>
+    
+1. From the <> Code dropdown link in the repository (above), download the Zip file to your computer.
+2. Extract the files to your working folder
+3. Open Eclipse and import the project.
+   - You can use File>Import menu item or right-click in the Package Manager and choose Import.
+   - Select General>Projects from Folder or Archive
+   - Navigate into the project until you see the `bin` and `src` folders, and choose _open_
+4. Expand the project in the package explorer and find the `.java` files below the `src` folder.
 
  [setup](#setup)
  <hr />
