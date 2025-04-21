@@ -53,7 +53,7 @@ class TestGoneFishing
 //		goneFishingView.updateUI();
 //	    assertTrue(goneFishingView instanceof JFrame);
 //	}
-
+//
 //	@Test
 //	void testGoneFishingButtonListener()
 //	{
